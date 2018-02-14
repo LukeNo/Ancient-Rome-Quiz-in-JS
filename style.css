@@ -1,0 +1,81 @@
+body {
+    background-image: url(img/colosseum.jpeg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1000px;
+    height: 330px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: rgba(255,255,255,0.5);
+    padding: 20px;
+    border: 1px solid #08038c;
+    -webkit-box-shadow: 0 0 8px 3px #fff;
+    box-shadow: 0 0 8px 3px #fff;
+}
+
+.title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.question {
+    padding: 20px;
+    font-size: 22px;
+    margin: 10px 0 10px 0;
+    border-radius: 20px;
+    background: #3b2103;
+    color: #f6f6f6;
+}
+
+.option {
+    width: 470px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    margin: 10px 0 10px 10px;
+    vertical-align: middle;
+    background: rgba(255,255,255,0.5);
+    border-radius: 20px;
+    color: #000;
+}
+
+.option:hover {
+    background: #6d3f0a;
+    color: #f6f6f6;
+}
+
+.next-btn {
+    border: none;
+    outline: none;
+    background: rgba(255, 25, 60, 0.5);
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    float: right;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.next-btn:hover {
+    background: #083908;
+    color: #f6f6f6;
+}
+
+.result {
+    height: 100px;
+    text-align: center;
+    font-size: 75px;
+}
+
+.option input:checked .option {
+    background: #b46d27;
+    color: #000;
+}
